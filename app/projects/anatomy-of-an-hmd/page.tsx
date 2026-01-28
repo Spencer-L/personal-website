@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { FileText, Github } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Anatomy of an HMD',
@@ -93,15 +94,21 @@ export default function AnatomyOfAnHMDPage() {
                 href="https://github.com/Spencer-L/Evolving-ML-Agents"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Github />
+                </span>
               </a>
               <a
                 href="/assets/pdf/ML-Agents-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Paper"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <FileText />
+                </span>
               </a>
             </div>
           </div>

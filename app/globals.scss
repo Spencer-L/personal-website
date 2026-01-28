@@ -258,10 +258,36 @@ img {
 
 // Media Links
 .medialinks {
-  a > img {
+  a > img,
+  a > span,
+  a > svg {
     margin-bottom: 2em;
     margin-right: 1em;
   }
+}
+
+.icon-circle {
+  --circle-size: 30px;
+  --icon-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.icon-circle--lg {
+  --circle-size: 35px;
+  --icon-size: 21px;
+}
+
+.icon-circle svg {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  color: #fff;
+  stroke-width: 2.5;
 }
 
 // Video Embeds

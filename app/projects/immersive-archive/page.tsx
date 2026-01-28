@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { FileText, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Immersive Archive',
@@ -119,15 +120,25 @@ export default function ImmersiveArchivePage() {
               <li>Blender</li>
             </ul>
             <div className="medialinks">
-              <a href="https://immersivearchive.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
+              <a
+                href="https://immersivearchive.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+              >
+                <span className="icon-circle">
+                  <Globe />
+                </span>
               </a>
               <a
                 href="/assets/pdf/Mesh-to-Line-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Paper"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <FileText />
+                </span>
               </a>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Github } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Cassia',
@@ -52,8 +53,11 @@ export default function CassiaPage() {
                 href="https://github.com/Spencer-L/Cassia"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Github />
+                </span>
               </a>
             </div>
           </div>

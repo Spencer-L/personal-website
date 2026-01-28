@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { FileText, Github, Instagram } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - SENVA',
@@ -92,22 +93,31 @@ export default function SenvaPage() {
                 href="https://github.com/NASA-SUITS-Teams/AEGIS-2023"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Github />
+                </span>
               </a>
               <a
                 href="/assets/pdf/NASA_SUITS_Retrospective.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Paper"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <FileText />
+                </span>
               </a>
               <a
                 href="https://www.instagram.com/nasa.teamaegis/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
-                <img src="/assets/images/Instagram-Black.png" width={30} height={30} alt="Instagram" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Instagram />
+                </span>
               </a>
             </div>
           </div>

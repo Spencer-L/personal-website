@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Instagram } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - For Traum',
@@ -40,14 +41,9 @@ export default function TraumPage() {
               <li>Led weekly meetings using Agile development cycle</li>
             </ul>
             <div style={{ marginBottom: '2em' }}>
-              <img
-                src="/assets/images/Instagram-Black.png"
-                width={30}
-                height={30}
-                alt="Instagram"
-                loading="lazy"
-                decoding="async"
-              />
+              <span className="icon-circle" role="img" aria-label="Instagram">
+                <Instagram />
+              </span>
             </div>
           </div>
         </div>

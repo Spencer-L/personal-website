@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Memory Space',
@@ -131,8 +132,11 @@ export default function MemorySpacePage() {
                 href="https://storymaps.arcgis.com/collections/85c6c5fe5ea142d2970200e7351d59b8?item=5"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Website"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Globe />
+                </span>
               </a>
             </div>
           </div>

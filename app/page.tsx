@@ -73,6 +73,7 @@ export default function Home() {
           alt="PawPals Connect"
           delay={0.35}
           aspectRatio="1/1"
+          objectFit="contain"
         />
 
         {/* ML Agents (spans 2 columns) */}

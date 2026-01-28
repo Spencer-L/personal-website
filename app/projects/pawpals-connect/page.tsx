@@ -1,6 +1,7 @@
 'use client';
 
 import type { Metadata } from 'next';
+import { Globe, Github } from 'lucide-react';
 
 export default function PawPalsConnectPage() {
   return (
@@ -190,15 +191,21 @@ export default function PawPalsConnectPage() {
                 href="https://devpost.com/software/paw-pals-connect"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Website"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Globe />
+                </span>
               </a>
               <a
                 href="https://github.com/Spencer-L/Paw-Pals-Connect"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="GitHub"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Github />
+                </span>
               </a>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Github, Globe, MessageCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Estuary',
@@ -105,14 +106,25 @@ export default function EstuaryPage() {
               <li>NVivo</li>
             </ul>
             <div className="medialinks">
-              <a href="https://estuary-ai.github.io/#/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
+              <a
+                href="https://estuary-ai.github.io/#/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+              >
+                <span className="icon-circle">
+                  <Globe />
+                </span>
               </a>
-              <a href="https://github.com/estuary-ai" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
+              <a href="https://github.com/estuary-ai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <span className="icon-circle">
+                  <Github />
+                </span>
               </a>
-              <a href="https://discord.gg/r6GDWkzbM9" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Discord-Logo.png" width={35} height={35} alt="Discord" loading="lazy" decoding="async" />
+              <a href="https://discord.gg/r6GDWkzbM9" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                <span className="icon-circle">
+                  <MessageCircle />
+                </span>
               </a>
             </div>
           </div>

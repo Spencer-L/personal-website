@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Spencer Lin - Immersive Synthetic Memories',
@@ -109,8 +110,11 @@ export default function ImmersiveSyntheticMemoriesPage() {
                 href="https://mobilemedia.usc.edu/projects/immersive-synthetic-memories-2024/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Website"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
+                <span className="icon-circle">
+                  <Globe />
+                </span>
               </a>
             </div>
           </div>
