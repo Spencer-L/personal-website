@@ -1,13 +1,25 @@
 {
+  "name": "spencer-lin-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
-    "lucide": "^0.546.0"
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "lucide-react": "^0.400.0",
+    "bootstrap": "^5.3.0"
   },
   "devDependencies": {
-    "esbuild": "^0.25.11"
-  },
-  "scripts": {
-    "build:js": "esbuild _javascript/main.js --bundle --outfile=assets/js/bundle.js --minify",
-    "watch:js": "esbuild _javascript/main.js --bundle --outfile=assets/js/bundle.js --watch",
-    "dev": "npm run watch:js & bundle exec jekyll serve"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.0.0",
+    "sass": "^1.77.0"
   }
 }

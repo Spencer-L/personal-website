@@ -1,0 +1,325 @@
+// Custom Fonts - must come first
+@font-face {
+  font-family: 'Boldini';
+  src: url("/assets/fonts/Boldini-Regular.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Titillium';
+  src: url("/assets/fonts/TitilliumWeb-Light.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Titillium-Bold';
+  src: url("/assets/fonts/TitilliumWeb-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+// Color Variables
+$primary-orange: #F4830F;
+$background-cream: #FDF6E6;
+$overlay-bg: #fcf7e5;
+$carousel-bg: #1b1c1c;
+
+// Base Styles
+body {
+  background-color: $background-cream !important;
+}
+
+// Typography - use !important to override Bootstrap
+h1 {
+  font-family: 'Boldini', sans-serif !important;
+  font-weight: normal !important;
+  color: $primary-orange !important;
+  font-size: x-large !important;
+}
+
+h2 {
+  font-family: 'Boldini', sans-serif !important;
+  font-weight: normal !important;
+  color: $primary-orange !important;
+  font-size: larger !important;
+}
+
+h3 {
+  font-family: 'Boldini', sans-serif !important;
+  font-weight: normal !important;
+  color: black !important;
+  font-size: large !important;
+}
+
+h4 {
+  font-family: 'Titillium-Bold', sans-serif !important;
+  font-weight: 700 !important;
+  color: black !important;
+  font-size: larger !important;
+}
+
+p {
+  font-family: 'Titillium', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: large !important;
+}
+
+b {
+  font-family: 'Titillium-Bold', sans-serif !important;
+  font-weight: 700 !important;
+  color: black !important;
+  font-size: large !important;
+}
+
+ul {
+  font-family: 'Titillium', sans-serif !important;
+  font-weight: 300 !important;
+  font-size: large !important;
+}
+
+a {
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+// Header styles
+.header-name {
+  font-family: 'Boldini', sans-serif !important;
+  color: black !important;
+  margin-left: 60px;
+  font-size: x-large !important;
+  
+  &:hover {
+    text-decoration: none !important;
+    color: black !important;
+  }
+}
+
+.job-title {
+  font-family: 'Boldini', sans-serif !important;
+  color: $primary-orange !important;
+  margin-left: 60px;
+  font-size: x-large !important;
+}
+
+// Navigation
+nav {
+  font-family: 'Boldini', sans-serif !important;
+}
+
+.nav-item {
+  font-family: 'Boldini', sans-serif !important;
+  font-size: x-large !important;
+  color: #007bff !important;
+  
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+  
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.current {
+  font-family: 'Boldini', sans-serif !important;
+  font-size: x-large !important;
+  color: $primary-orange !important;
+  
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+  
+  &:hover {
+    text-decoration: none !important;
+    color: $primary-orange !important;
+  }
+}
+
+// Layout
+.main {
+  margin-top: 6%;
+}
+
+.main__title {
+  margin-bottom: 1em;
+}
+
+.bio {
+  text-align: left;
+  width: 500px;
+}
+
+.left-align {
+  text-align: left;
+}
+
+// Figure & Image Styles
+figure {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+img {
+  border-radius: 15px;
+}
+
+// Overlay Effects
+.overlay-container {
+  position: relative;
+  background-color: $overlay-bg;
+  border-radius: 15px;
+  overflow: hidden;
+  
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+    
+    img {
+      opacity: 0.5;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.overlay-text {
+  color: $primary-orange !important;
+  font-family: 'Boldini', sans-serif !important;
+  font-size: x-large !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// Hover Effects
+.hover10 figure img {
+  opacity: 1;
+  transition: .3s ease-in-out;
+}
+
+.hover10 figure:hover img {
+  opacity: 0.5;
+}
+
+// Center Utility
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// No Gutters
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// Media Links
+.medialinks {
+  a > img {
+    margin-bottom: 2em;
+    margin-right: 1em;
+  }
+}
+
+// Video Embeds
+.vimeo-video {
+  margin-bottom: 20px;
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.video-responsive {
+  padding: 56.25% 0 0 0;
+  position: relative;
+  margin-top: 1em;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Carousel
+.carousel-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.carousel-container {
+  background-color: $carousel-bg;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+// Logo Container
+.logo-container {
+  border-radius: 15px;
+  overflow: hidden;
+  background: transparent;
+}
+
+// Lucide Icons
+[data-lucide] {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+}
+
+.icon-large {
+  width: 32px;
+  height: 32px;
+}
+
+// Project Page Styles
+.project-content {
+  margin-top: 50px;
+}
+
+.project-media {
+  margin-top: 3em;
+}
+
+.project-info {
+  width: 400px;
+  text-align: left;
+}
