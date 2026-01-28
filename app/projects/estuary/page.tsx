@@ -106,13 +106,13 @@ export default function EstuaryPage() {
             </ul>
             <div className="medialinks">
               <a href="https://estuary-ai.github.io/#/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" />
+                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
               </a>
               <a href="https://github.com/estuary-ai" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" />
+                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
               </a>
               <a href="https://discord.gg/r6GDWkzbM9" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Discord-Logo.png" width={35} height={35} alt="Discord" />
+                <img src="/assets/logos/Discord-Logo.png" width={35} height={35} alt="Discord" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

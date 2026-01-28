@@ -94,14 +94,14 @@ export default function MLAgentsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" />
+                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
               </a>
               <a
                 href="/assets/pdf/ML-Agents-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" />
+                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function CassiaPage() {
         <div className="col-sm">
           <div className="mx-auto" style={{ width: 360 }}>
             <figure>
-              <img src="/assets/images/Cassia-Demo.gif" width={360} height={720} alt="Cassia Demo" />
+              <img src="/assets/images/Cassia-Demo.gif" width={360} height={720} alt="Cassia Demo" loading="lazy" decoding="async" />
             </figure>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function CassiaPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" />
+                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

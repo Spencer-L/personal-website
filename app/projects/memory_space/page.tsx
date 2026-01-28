@@ -34,6 +34,8 @@ export default function MemorySpacePage() {
                   src="/assets/images/Memory-Space.png"
                   alt="A split view of Union Station and the intersection of Alameda and Marchessault St"
                   style={{ width: 600, height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">
@@ -50,6 +52,8 @@ export default function MemorySpacePage() {
                   src="/assets/images/Memory-Space-AR-View.png"
                   alt="Memory Space AR-view of David Lee"
                   style={{ width: 600, height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">AR screenshot of Memory Space</div>
@@ -128,7 +132,7 @@ export default function MemorySpacePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" />
+                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

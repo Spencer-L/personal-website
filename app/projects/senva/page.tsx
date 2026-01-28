@@ -93,21 +93,21 @@ export default function SenvaPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" />
+                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
               </a>
               <a
                 href="/assets/pdf/NASA_SUITS_Retrospective.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" />
+                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
               </a>
               <a
                 href="https://www.instagram.com/nasa.teamaegis/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/images/Instagram-Black.png" width={30} height={30} alt="Instagram" />
+                <img src="/assets/images/Instagram-Black.png" width={30} height={30} alt="Instagram" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

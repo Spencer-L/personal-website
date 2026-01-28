@@ -24,6 +24,8 @@ export default function ImmersiveArchivePage() {
                   src="/assets/images/Mondrian-Room.PNG"
                   alt="Vector line graphic recreation of the original Mondrian room experience"
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">Recreation of the Mondrian Room</div>
@@ -38,6 +40,8 @@ export default function ImmersiveArchivePage() {
                   src="/assets/images/Vectorizer-Tool-Banner.png"
                   alt="Vectorizer tool demo"
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">Demo of Mesh-To-Line tool</div>
@@ -116,14 +120,14 @@ export default function ImmersiveArchivePage() {
             </ul>
             <div className="medialinks">
               <a href="https://immersivearchive.org/" target="_blank" rel="noopener noreferrer">
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" />
+                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
               </a>
               <a
                 href="/assets/pdf/Mesh-to-Line-Paper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" />
+                <img src="/assets/logos/Paper-Glyph.png" width={30} height={30} alt="Paper" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

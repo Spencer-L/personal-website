@@ -42,6 +42,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Blue_Mountain_1.png"
                     className="d-block w-100"
                     alt="Blue Mountain"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -49,6 +51,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Blue_Yellow_Cat.png"
                     className="d-block w-100"
                     alt="Blue Yellow Cat"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -56,6 +60,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Stable_Diffusion_Poster_Blank.png"
                     className="d-block w-100"
                     alt="Stable Diffusion Poster"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -63,6 +69,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Blue_Yellow_Shepherd.png"
                     className="d-block w-100"
                     alt="Blue Yellow Shepherd"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -96,6 +104,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Leia.jpg"
                     alt="A portrait of my cat, Leia"
                     style={{ width: '100%', height: 'auto' }}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </figure>
               </div>
@@ -105,6 +115,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Chang_Yu_Blue_Vase.jpeg"
                     alt="Chang Yu's blue vase painting"
                     style={{ width: 'auto', height: 291 }}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </figure>
               </div>
@@ -114,6 +126,8 @@ export default function StableDiffusionPage() {
                     src="/assets/images/stable_diffusion/Blue_Leia.png"
                     alt="Style transferred Leia"
                     style={{ width: '100%', height: 'auto' }}
+                    loading="lazy"
+                    decoding="async"
                   />
                 </figure>
               </div>
@@ -148,6 +162,8 @@ export default function StableDiffusionPage() {
                       src={`/assets/images/stable_diffusion/yaoguais/yaoguai_${i + 1}.png`}
                       className="d-block w-100"
                       alt={`Yaoguai ${i + 1}`}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 ))}

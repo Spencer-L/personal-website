@@ -60,6 +60,8 @@ export default function PawPalsConnectPage() {
                     src="/assets/images/pawpals_connect/PawPals_Connect_1.JPG"
                     className="d-block w-100"
                     alt="PawPals Connect 1"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -67,6 +69,8 @@ export default function PawPalsConnectPage() {
                     src="/assets/images/pawpals_connect/PawPals_Connect_3.PNG"
                     className="d-block w-100"
                     alt="PawPals Connect 3"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -74,6 +78,8 @@ export default function PawPalsConnectPage() {
                     src="/assets/images/pawpals_connect/Red_Bull_Tower.JPG"
                     className="d-block w-100"
                     alt="Red Bull Tower"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -81,6 +87,8 @@ export default function PawPalsConnectPage() {
                     src="/assets/images/pawpals_connect/PawPals_Connect_2.JPG"
                     className="d-block w-100"
                     alt="PawPals Connect 2"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="carousel-item">
@@ -88,6 +96,8 @@ export default function PawPalsConnectPage() {
                     src="/assets/images/pawpals_connect/MIT_Reality_Hack_2025_Awards.png"
                     className="d-block w-100"
                     alt="MIT Reality Hack 2025 Awards"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
@@ -181,14 +191,14 @@ export default function PawPalsConnectPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" />
+                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
               </a>
               <a
                 href="https://github.com/Spencer-L/Paw-Pals-Connect"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" />
+                <img src="/assets/logos/GitHub-Logo.png" width={30} height={30} alt="GitHub" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>

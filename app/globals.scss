@@ -178,14 +178,21 @@ img {
   background-color: $overlay-bg;
   border-radius: 15px;
   overflow: hidden;
+  contain: layout style paint;
   
   &:hover {
     .overlay {
-      opacity: 1;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, transparent 70%);
+    }
+    
+    .overlay-text {
+      background: rgba(0, 0, 0, 0.3);
+      padding-left: 24px;
     }
     
     img {
-      opacity: 0.5;
+      opacity: 0.85;
+      transform: scale(1.02) translateZ(0);
     }
   }
 }
@@ -198,20 +205,24 @@ img {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: .5s ease;
+  opacity: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 60%);
+  transition: background 0.4s ease;
+  display: flex;
+  align-items: flex-end;
 }
 
 .overlay-text {
   color: $primary-orange !important;
   font-family: 'Boldini', sans-serif !important;
   font-size: x-large !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: rgba(0, 0, 0, 0.5);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 0;
+  background: transparent;
+  text-align: left;
+  transition: background 0.3s ease, padding 0.3s ease;
 }
 
 // Hover Effects
@@ -323,4 +334,120 @@ img {
 .project-info {
   width: 400px;
   text-align: left;
+}
+
+// Bento Grid Layout
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  contain: layout style;
+  
+  // Desktop (1200px+): 4 columns
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 30px;
+  }
+  
+  // Tablet (768-1199px): 3 columns
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+    gap: 15px;
+  }
+  
+  // Mobile (<576px): 1 column
+  @media (max-width: 575px) {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+}
+
+// Bento Grid Span Classes
+.bento-item {
+  min-height: 200px;
+  
+  // Make images fill the grid cell
+  .overlay-container {
+    width: 100% !important;
+    height: 100%;
+  }
+  
+  figure {
+    height: 100%;
+    position: relative; // Required for next/image with fill
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: transform, opacity;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+// Span 2 columns
+.span-2 {
+  grid-column: span 2;
+  
+  @media (max-width: 575px) {
+    grid-column: span 1;
+  }
+}
+
+// Span 3 columns (featured)
+.span-3 {
+  grid-column: span 3;
+  min-height: 350px;
+  
+  @media (max-width: 1199px) {
+    grid-column: span 3;
+  }
+  
+  @media (max-width: 767px) {
+    grid-column: span 2;
+    min-height: 250px;
+  }
+  
+  @media (max-width: 575px) {
+    grid-column: span 1;
+    min-height: 200px;
+  }
+}
+
+// Span 4 columns (full width)
+.span-4 {
+  grid-column: span 4;
+  min-height: 400px;
+  
+  @media (max-width: 1199px) {
+    grid-column: span 3;
+  }
+  
+  @media (max-width: 767px) {
+    grid-column: span 2;
+    min-height: 280px;
+  }
+  
+  @media (max-width: 575px) {
+    grid-column: span 1;
+    min-height: 220px;
+  }
+}
+
+// Row span for tall items
+.row-span-2 {
+  grid-row: span 2;
+  min-height: 440px;
+  
+  @media (max-width: 767px) {
+    grid-row: span 1;
+    min-height: 200px;
+  }
 }

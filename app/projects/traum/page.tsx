@@ -45,6 +45,8 @@ export default function TraumPage() {
                 width={30}
                 height={30}
                 alt="Instagram"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

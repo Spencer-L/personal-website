@@ -24,6 +24,8 @@ export default function ImmersiveSyntheticMemoriesPage() {
                   src="/assets/images/Stereo_Synthetic_Memory.jpg"
                   alt="Stereoscopic Immersive Synthetic Memory"
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">Stereo Immersive Synthetic Memory</div>
@@ -38,6 +40,8 @@ export default function ImmersiveSyntheticMemoriesPage() {
                   src="/assets/images/Synthetic_Memory_Comparison.JPG"
                   alt="Synthetic Memory Comparison"
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="overlay">
                   <div className="overlay-text">Comparison of Synthetic Memory to Original</div>
@@ -106,7 +110,7 @@ export default function ImmersiveSyntheticMemoriesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" />
+                <img src="/assets/logos/Website-Glyph.png" width={30} height={30} alt="Website" loading="lazy" decoding="async" />
               </a>
             </div>
           </div>
