@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="container-fluid">
+        <div className="container-fluid" style={{ paddingTop: '20px' }}>
           <div className="row">
             <div className="col-sm">
               <div className="float-left" style={{ width: 600 }}>
